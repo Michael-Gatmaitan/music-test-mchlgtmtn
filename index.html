@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Music Test</title>
+</head>
+<body>
+
+  <!-- <audio src="./music/lofi/Blue Wednesday - New Shoes.mp3" autoplay></audio> -->
+
+  <audio id="my-audio" controls autoplay>
+    <source src="./music/rock/Paramore- When It Rains (Audio).mp3" type="audio/mpeg" />
+  </audio>
+
+  <div>
+    <button onclick="changeMusic('./music/lofi/Blue Wednesday - New Shoes.mp3')">
+      Blue Wednesday - New Shoes
+    </button>
+
+    <button onclick="changeMusic('./music/rock/Paramore- When It Rains (Audio).mp3')">
+      Paramore - When It Rains
+    </button>
+</div>
+
+  <script>
+    function changeMusic(musicPath) {
+      document.getElementById("my-audio").pause();
+      document.getElementById("my-audio").setAttribute('src', musicPath);
+      document.getElementById("my-audio").load();
+      document.getElementById("my-audio").play();
+    }
+  </script>
+
+</body>
+</html>

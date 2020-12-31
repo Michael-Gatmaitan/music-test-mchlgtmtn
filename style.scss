@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body, html {
+  margin: 12px;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+
+div {
+  margin-top: 12px;
+}
+
+button {
+  padding: 12px 24px;
+  background-color: #000;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 8px;
+}
